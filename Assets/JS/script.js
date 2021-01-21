@@ -10,11 +10,11 @@ var addition = document.getElementById("button-plus");
 // var equal
 // var openParen
 // var closeParen
-var button = document.querySelectorAll("button");
+var button = $("button");
 // add eventlistener to buttons -> click,function(event)
-button.addEventListener("click", function(event){
-        var elements = event.target;
-        console.log("elements:", elements)
+button.on("click", function(){
+        var elements = this.value;
+        console.log("this.value:", elements)
 });
 // >>>> var el = event.target
 //use textContent 
